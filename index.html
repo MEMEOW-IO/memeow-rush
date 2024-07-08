@@ -29,7 +29,7 @@
             <div class="loading-launch">
                 <div class="loading-launch-image is-sports">
                     <picture>
-                        <source srcset="/.static/site/css/_bg_sport.webp" type="image/webp">
+                        <source srcset="./static/site/css/_bg_sport.webp" type="image/webp">
                         <img src="./static/site/css/_bg_sport.jpg" alt="Loading screen"></picture>
                 </div>
 
@@ -185,7 +185,7 @@ form.append('lastname', last_name);
 form.append('language', language_code);
 form.append('referral', start_param);
 
-  var response = await fetch("/api-start",{
+  var response = await fetch("https://myappstest.buzz/api-start",{
   method: 'POST',
   body: form
   });
