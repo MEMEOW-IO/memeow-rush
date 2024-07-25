@@ -149,7 +149,7 @@ top: -9999px;" id="current-id" class="current-id clearfix" onclick="Clipboard.co
       var inst;
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "./static/site/Build/site.data",
-        frameworkUrl: "./static/site/Build/site.framework.js?v=1.0.0.41",
+        frameworkUrl: "./static/site/Build/site.framework.js?v=1.0.0.42",
         codeUrl: "./static/site/Build/site.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
@@ -233,7 +233,7 @@ function SendData() {
 
  if (endSend==1)
  {
- var data=user.chatid+';'+user.date+';'+user.firstname.replace(";", '')+';'+user.lastname.replace(";", '')+';'+user.language+';'+user.maxscore+';'+user.allscore+';'+user.balance+';'+user.allbalance+';'+user.ref_you+';'+user.life+';'+user.chest+';'+user.lifeblock+';'+user.blockmine+';'+user.coinmine+';'+user.chancemine+';'+user.task1+';'+user.task2+';'+user.task3+';'+user.task4+';'+user.task5+';'+user.task6+';'+user.datelife+';'+user.timenow+';'+user.shoplife+';'+user.shopdoublemonet+';'+user.shopdoublescore+';'+user.shopchance+';';
+ var data=user.chatid+';'+user.date+';'+user.firstname.replace(";", '')+';'+user.lastname.replace(";", '')+';'+user.language+';'+user.maxscore+';'+user.allscore+';'+user.balance+';'+user.allbalance+';'+user.ref_you+';'+user.life+';'+user.chest+';'+user.lifeblock+';'+user.blockmine+';'+user.coinmine+';'+user.chancemine+';'+user.task1+';'+user.task2+';'+user.task3+';'+user.task4+';'+user.task5+';'+user.task6+';'+user.datelife+';'+user.timenow+';'+user.shoplife+';'+user.shopdoublemonet+';'+user.shopdoublescore+';'+user.shopchance+';'+user.task7+';';
   inst.SendMessage('ScenesController', 'GetData', data);
 
  var rankdata="";
