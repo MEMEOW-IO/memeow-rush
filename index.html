@@ -55,6 +55,9 @@ chat.style.display="none";
 <body>
 <canvas id="unity-canvas" style="display: none;width: 100%; height: 100%;"></canvas>
 
+<div style="position: absolute;
+top: -9999px;" id="current-id" class="current-id clearfix" onclick="Clipboard.copy('#current-id');">copy!</div>
+
 <div id="__nuxt" data-v-app="">
     <div class="page">
         <div class="main">
@@ -146,7 +149,7 @@ chat.style.display="none";
       var inst;
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "./static/site/Build/site.data",
-        frameworkUrl: "./static/site/Build/site.framework.js?v=1.0.0.35",
+        frameworkUrl: "./static/site/Build/site.framework.js?v=1.0.0.36",
         codeUrl: "./static/site/Build/site.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
