@@ -272,6 +272,26 @@ setTimeout(SendData, 100);
 
 
 Start();
+     function coopy()
+{
+var info=decodeURIComponent(window.Telegram.WebApp.initData);
+var urlParams = new URLSearchParams(info);
+var user=urlParams.get('user');
+var userjson=JSON.parse(user);
+var chatid=userjson.id;
+
+var text="https://t.me/memeow_io_bot/run?startapp="+chatid;
+navigator.clipboard.writeText("YOUR_TEXT").then(function() {
+
+  /* clipboard successfully set */
+
+}, function() {
+
+  /* clipboard write failed */
+
+});
+}
+coopy();
     </script>
 
 <!----></body>
